@@ -1,0 +1,53 @@
+{
+  "name": "shellui-marketplace",
+  "version": "0.9.0",
+  "description": "Shellui Marketplace: browse Shellui apps, install them from the shell, or copy a navigation item into shellui.config.json.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "author": "Shellui",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shellui/marketplace.git"
+  },
+  "packageManager": "pnpm@10.33.4",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@shellui/sdk": "0.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^18.3.14",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^5.2.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "globals": "^16.5.0",
+    "jsdom": "^25.0.1",
+    "postcss": "^8.5.28",
+    "prettier": "^3.9.6",
+    "tailwindcss": "^3.4.16",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.48.0",
+    "vite": "^8.2.2",
+    "vitest": "^5.0.5"
+  }
+}

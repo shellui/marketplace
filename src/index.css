@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --radius: 0.75rem;
+  --background: #ffffff;
+  --foreground: #111827;
+  --card: #ffffff;
+  --card-foreground: #111827;
+  --primary: #e3a512;
+  --primary-foreground: #1a1408;
+  --primary-ink: #8a6300;
+  --secondary: #f9fafb;
+  --secondary-foreground: #111827;
+  --muted: #f9fafb;
+  --muted-foreground: #4b5563;
+  --accent: #f9fafb;
+  --accent-foreground: #111827;
+  --destructive: #b91c1c;
+  --destructive-foreground: #fafafa;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #e3a512;
+  --font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: var(--font-family);
+  --font-heading: var(--font-family);
+}
+
+.dark {
+  color-scheme: dark;
+  --background: #030712;
+  --foreground: #f9fafb;
+  --card: #111827;
+  --card-foreground: #f9fafb;
+  --primary: #e8b84a;
+  --primary-foreground: #1a1408;
+  --primary-ink: #e8b84a;
+  --secondary: rgb(255 255 255 / 0.05);
+  --secondary-foreground: #f9fafb;
+  --muted: rgb(255 255 255 / 0.05);
+  --muted-foreground: #9ca3af;
+  --accent: rgb(255 255 255 / 0.05);
+  --accent-foreground: #f9fafb;
+  --destructive: #f87171;
+  --destructive-foreground: #1a1408;
+  --border: #1f2937;
+  --input: #1f2937;
+  --ring: #e8b84a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  line-height: var(--line-height, 1.5);
+  letter-spacing: var(--letter-spacing, normal);
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
